@@ -18,7 +18,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     │   ├─ ParkingFloor.h
     │   ├─ ParkingLot.h
     │   └─ Gate.h
-    └─ main.cpp
+    ├─ main.cpp
+    |
+    └─ LICENSE.txt
 
 /*  Class Diagram
 
@@ -41,9 +43,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
         |-----------------|  |----------------------|
         | +generateTicket |  | ticketId, spotId     |      +------------+
         +-----------------+  | entryTime, paid, amt |<>----|  Vehicle   |
-                            +----------------------+      |------------|
-                                                            | plate, type|
-                                                            +------------+
+                             +----------------------+      |------------|
+                                                           | plate, type|
+                                                           +------------+
 */
 
 📌 Features
