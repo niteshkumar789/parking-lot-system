@@ -1,5 +1,5 @@
 /*  Folder
-    
+
         parking-lot/
         ├─ core/
         │   ├─ Vehicle.h
@@ -11,29 +11,31 @@
         │   ├─ ParkingFloor.h
         │   ├─ ParkingLot.h
         │   └─ Gate.h
-        └─ main.cpp
+        ├─ main.cpp
+        |
+        └─ LICENSE.txt
 */
 
 /*  Use Case
 
-                    +------------------+
+                +------------------+
                 |     Driver       |
                 +------------------+
                     ^   ^    ^   ^
                     |   |    |   |
-            +------+   |    |   +--------------+
-            |          |    |                  |
+             +------+   |    |   +--------------+
+             |          |    |                  |
         +-----------+  +-------------+  +--------------------+
-        |  Park     |  |  Pay Fee    |  |  Leave Parking    |
-        | Vehicle   |  |  (Cash/Card)|  |  (get receipt)    |
+        |  Park     |  |  Pay Fee    |  |  Leave Parking     |
+        | Vehicle   |  |  (Cash/Card)|  |  (get receipt)     |
         +-----------+  +-------------+  +--------------------+
                     \    (uses)     /
-                    \             /
-                    +-----------+
-                    | Get Ticket|
-                    +-----------+
+                     \             /
+                      +-----------+
+                      | Get Ticket|
+                      +-----------+
 
-        Secondary actors: **Parking Agent**, **Auto-Pay Machine**
+        Secondary actors: *Parking Agent*, **Auto-Pay Machine*
 
 */
 
@@ -58,27 +60,27 @@
         |-----------------|  |----------------------|
         | +generateTicket |  | ticketId, spotId     |      +------------+
         +-----------------+  | entryTime, paid, amt |<>----|  Vehicle   |
-                            +----------------------+      |------------|
-                                                            | plate, type|
-                                                            +------------+
+                             +----------------------+      |------------|
+                                                           | plate, type|
+                                                           +------------+
 */
 
 /*  Activity Diagram
 
         [Start]→(Arrive Gate)
-        ↓
+                ↓
         [Display free counts]←─DisplayBoard.update()
-        ↓
+                ↓
         (Scan / press button to get ticket)
-        ↓
+                ↓
         [Assign nearest free spot (type OK?)]
-        ↓
+                ↓
         (Create Ticket, mark spot occupied, update board)
-        ↓
+                ↓
         <<Ticket printed>>
-        ↓
+                ↓
         [Driver parks car]
-        ↓
+                ↓
         [End]
 */
 
