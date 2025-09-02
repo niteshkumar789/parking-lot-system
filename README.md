@@ -7,22 +7,24 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
 
 📂 Project Structure
 
-    parking-lot/
-    ├─ core/
-    │   ├─ Vehicle.h
-    │   ├─ ParkingSpot.h
-    │   ├─ Ticket.h
-    │   └─ RateCalculator.h
+    Parking-Lot-System
     |
-    ├─ service/
-    │   ├─ DisplayBoard.h
-    │   ├─ ParkingFloor.h
-    │   ├─ ParkingLot.h
-    │   └─ Gate.h
+    ├─ parking-lot/
+    |    ├─ core/
+    |    │   ├─ Vehicle.h
+    |    │   ├─ ParkingSpot.h
+    |    │   ├─ Ticket.h
+    |    │   └─ RateCalculator.h
+    |    |
+    |    ├─ service/
+    |    │   ├─ DisplayBoard.h
+    |    │   ├─ ParkingFloor.h
+    |    │   ├─ ParkingLot.h
+    |    │   └─ Gate.h
+    |    └─ main.cpp
     |
-    ├─ main.cpp
-    |
-    └─ LICENSE.txt
+    ├─ LICENSE.txt
+    └─ README.md
 
 /*  Use Case
 
