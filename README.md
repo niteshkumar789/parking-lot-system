@@ -13,11 +13,13 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     │   ├─ ParkingSpot.h
     │   ├─ Ticket.h
     │   └─ RateCalculator.h
+    |
     ├─ service/
     │   ├─ DisplayBoard.h
     │   ├─ ParkingFloor.h
     │   ├─ ParkingLot.h
     │   └─ Gate.h
+    |
     ├─ main.cpp
     |
     └─ LICENSE.txt
