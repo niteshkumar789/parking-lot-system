@@ -22,6 +22,29 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     |
     └─ LICENSE.txt
 
+/*  Use Case
+
+                +------------------+
+                |     Driver       |
+                +------------------+
+                    ^   ^    ^   ^
+                    |   |    |   |
+             +------+   |    |   +--------------+
+             |          |    |                  |
+        +-----------+  +-------------+  +--------------------+
+        |  Park     |  |  Pay Fee    |  |  Leave Parking     |
+        | Vehicle   |  |  (Cash/Card)|  |  (get receipt)     |
+        +-----------+  +-------------+  +--------------------+
+                    \    (uses)     /
+                     \             /
+                      +-----------+
+                      | Get Ticket|
+                      +-----------+
+
+        Secondary actors: *Parking Agent*, **Auto-Pay Machine*
+
+*/
+
 /*  Class Diagram
 
         +----------------+          +------------------+      +---------------+
