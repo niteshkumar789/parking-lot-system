@@ -157,10 +157,10 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
 
 🚀 Future Enhancements
 
-    Support for online payments / wallets
-    Reservation system for advance bookings
-    Integration with cameras & license plate recognition
-    REST API for real-time parking availability
+    . Support for online payments / wallets
+    . Reservation system for advance bookings
+    . Integration with cameras & license plate recognition
+    . REST API for real-time parking availability
 
 📜 License
 
