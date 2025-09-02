@@ -6,11 +6,13 @@
         │   ├─ ParkingSpot.h
         │   ├─ Ticket.h
         │   └─ RateCalculator.h
+        |
         ├─ service/
         │   ├─ DisplayBoard.h
         │   ├─ ParkingFloor.h
         │   ├─ ParkingLot.h
         │   └─ Gate.h
+        |
         ├─ main.cpp
         |
         └─ LICENSE.txt
