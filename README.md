@@ -47,6 +47,7 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
 */
 
 📌 Features
+
     🅿️ Parking Spot Allocation based on vehicle type (Car, Motorcycle, etc.)
     🎫 Ticketing System for each parked vehicle
     💰 Rate Calculation based on duration & spot type
@@ -55,6 +56,7 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     🏢 Multiple Floors Support in Parking Lot
 
 🏗️ Design Overview
+
     ✅ Use Case
         . Primary Actor: Driver
         . Secondary Actors: Parking Agent, Auto-Pay Machine
@@ -122,6 +124,7 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     Motorcycle : 0
 
 📊 Sequence Diagram
+
     Here’s a PlantUML sequence diagram of the workflow:
 
     @startuml
@@ -148,10 +151,12 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
 
 
 ⚙️ Build & Run
+
     g++ -std=c++11 main.cpp -o parking_lot
     ./parking_lot
 
 🚀 Future Enhancements
+
     Support for online payments / wallets
     Reservation system for advance bookings
     Integration with cameras & license plate recognition
