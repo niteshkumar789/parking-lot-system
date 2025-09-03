@@ -1,11 +1,11 @@
-# parking-lot-system
-
-🚗 A low level design of parking lot system (LLD in C++)
+# 🚗 A low level design of parking lot system (LLD in C++)
 
 This project is a Low-Level Design (LLD) implementation of a Parking Lot system in C++.
-It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inheritance, and composition to model a real-world parking lot.
+It demonstrates `Object-Oriented Design (OOD)` principles like `encapsulation`, `inheritance`, and `composition` to model a real-world parking lot.
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
 
     Parking-Lot-System
     |
@@ -26,7 +26,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     ├─ LICENSE.txt
     └─ README.md
 
-/*  Use Case
+---
+
+## Use Case Diagram
 
                 +------------------+
                 |     Driver       |
@@ -45,15 +47,15 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
                       | Get Ticket|
                       +-----------+
 
-        Secondary actors: *Parking Agent*, **Auto-Pay Machine*
+        Secondary actors: Parking Agent, Auto-Pay Machine
 
-*/
+---
 
-/*  Class Diagram
+## Class Diagram
 
         +----------------+          +------------------+      +---------------+
         |  ParkingLot    |<>------->|  ParkingFloor    |<>--->| ParkingSpot   |
-        |----------------|1      *  |------------------|1  *  |---------------|
+        |----------------|          |------------------|      |---------------|
         | - name         |          | - floorNo        |      | - id          |
         | - capacity=40k |          | - spotsByType    |      | - isFree      |
         | - floors       |          |------------------|      | +parkVehicle()|
@@ -73,18 +75,21 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
                              +----------------------+      |------------|
                                                            | plate, type|
                                                            +------------+
-*/
 
-📌 Features
+---                                            
 
-    🅿️ Parking Spot Allocation based on vehicle type (Car, Motorcycle, etc.)
-    🎫 Ticketing System for each parked vehicle
-    💰 Rate Calculation based on duration & spot type
-    📊 Display Board showing available spots by type
-    🚪 Entrance & Exit Gates for issuing and closing tickets
-    🏢 Multiple Floors Support in Parking Lot
+## 📌 Features
 
-🏗️ Design Overview
+- 🅿️ Parking Spot Allocation based on vehicle type (Car, Motorcycle, etc.)
+- 🎫 Ticketing System for each parked vehicle
+- 💰 Rate Calculation based on duration & spot type
+- 📊 Display Board showing available spots by type
+- 🚪 Entrance & Exit Gates for issuing and closing tickets
+- 🏢 Multiple Floors Support in Parking Lot
+
+---
+
+## 🏗️ Design Overview
 
     ✅ Use Case
         . Primary Actor: Driver
@@ -104,7 +109,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
         . On exit, driver pays fee → ticket closed
         . Spot marked free & DisplayBoard updated
 
-🖥️ Example Run
+---
+
+## 🖥️ Example Run
 
     #include "service/ParkingLot.h"
     int main() {
@@ -130,7 +137,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
         return 0;
     }
 
-✅ Sample Output
+---
+
+## ✅ Sample Output
 
     === Availability ===
     Handicapped: 0
@@ -152,7 +161,9 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     Large      : 1
     Motorcycle : 0
 
-📊 Sequence Diagram
+---
+
+## 📊 Sequence Diagram
 
     Here’s a PlantUML sequence diagram of the workflow:
 
@@ -178,20 +189,26 @@ It demonstrates Object-Oriented Design (OOD) principles like encapsulation, inhe
     You can visualize it by pasting the above code into:
     👉 PlantText UML Editor or any PlantUML-supported tool.
 
+---
 
-⚙️ Build & Run
 
-    g++ -std=c++11 main.cpp -o parking_lot
-    ./parking_lot
+## ⚙️ Build & Run
 
-🚀 Future Enhancements
+- Compile: `g++ -std=c++11 main.cpp -o parking_lot`
+- Run: `./parking_lot`
 
-    . Support for online payments / wallets
-    . Reservation system for advance bookings
-    . Integration with cameras & license plate recognition
-    . REST API for real-time parking availability
+---
 
-📜 License
+## 🚀 Future Enhancements
+
+- Support for online payments / wallets
+- Reservation system for advance bookings
+- Integration with cameras & license plate recognition
+- REST API for real-time parking availability
+
+---
+
+## 📜 License
 
     This project is open-source under the MIT License.
 
